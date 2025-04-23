@@ -1,8 +1,12 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './core/components/header/header.component';
+import { DashboredComponent } from './shared/adminComponents/dashbored/dashbored.component';
 
-export const routes: Routes = [{
-
-    path:"/",
-    loadComponent:()=>import("./core/components/header/header.component").then(c=>c.HeaderComponent)
-}];
+export const routes: Routes = [
+  {
+    path: 'admin/dashbored',
+    loadComponent: () =>
+      import('./shared/adminComponents/dashbored/dashbored.component').then(
+        (c) => c.DashboredComponent
+      ),
+  },
+];
