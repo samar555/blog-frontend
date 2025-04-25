@@ -6,3 +6,7 @@
 .card-background{
     background-color: rgb(6, 6, 53);
 }
+.menu-hover:hover{
+    background-color: rgb(53, 13, 230);
+    color: rgb(4, 36, 63);
+}
