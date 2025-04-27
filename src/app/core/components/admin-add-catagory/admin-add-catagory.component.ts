@@ -9,4 +9,12 @@ import { AdminHeaderComponent } from "../admin-header/admin-header.component";
 })
 export class AdminAddCatagoryComponent {
 
+ 
+  toggleField(){
+   const inputElement = document.getElementById('myInput') as HTMLInputElement;
+   if(){
+    
+   }
+  }
+
 }

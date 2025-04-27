@@ -1,6 +1,69 @@
 <app-admin-header></app-admin-header>
-
 <div class="background-color">
+    <div class="container pt-3 pb-2">
+       <!-- add catagory starts  -->
+        <div class="card border-success mb-3 text-white card-background" >
+            <div class="card-header">Add Catagory</div>
+            <div class="card-body ">
+              <h5 class="card-title"></h5>
+           
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Enter Catagory</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                </div>
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Enter Sub-Catagory</label>
+                    <select id="disabledSelect" (keydown)="toggleField()" class="form-select">
+                      <option>-</option>
+                    </select>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+          
 
-  
+            </div>
+          </div>
+          <!-- add catagory ends  -->
+        <!-- table start  -->
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Catagory</th>
+                <th scope="col">Sub-Catagory</th>
+                <th scope="col">Delete</th>
+                <th scope="col">Update</th>
+                
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+               
+                <td><span><img class="logo-style" src="images/delete.png" alt=""></span></td>
+                <td><span><img class="logo-style" src="images/pen.png" alt=""></span></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><span><img class="logo-style" src="images/delete.png" alt=""></span></td>
+                <td><span><img class="logo-style" src="images/pen.png" alt=""></span></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>John</td>
+                <td>Doe</td>
+                <td><span><img class="logo-style" src="images/delete.png" alt=""></span></td>
+                <td><span><img class="logo-style" src="images/pen.png" alt=""></span></td>
+              </tr>
+            </tbody>
+          </table>
+          
+    
+    </div>
 </div>
+
