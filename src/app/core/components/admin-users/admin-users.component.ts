@@ -3,7 +3,7 @@ import { AdminHeaderComponent } from "../admin-header/admin-header.component";
 
 @Component({
   selector: 'app-admin-users',
-  imports: [AdminHeaderComponent],
+  imports: [],
   templateUrl: './admin-users.component.html',
   styleUrl: './admin-users.component.css'
 })

@@ -3,7 +3,7 @@ import { AdminHeaderComponent } from "../admin-header/admin-header.component";
 
 @Component({
   selector: 'app-admin-add-catagory',
-  imports: [AdminHeaderComponent],
+  imports: [],
   templateUrl: './admin-add-catagory.component.html',
   styleUrl: './admin-add-catagory.component.css'
 })

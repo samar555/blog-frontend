@@ -1,0 +1,33 @@
+.background-color {
+    background-color: rgb(42, 42, 148);
+    background: linear-gradient(rgb(60, 60, 204), rgb(1, 1, 22));
+    /* height: 100vh; */
+    /* width: 100vw; */
+}
+
+.crousal-height {
+    height: 75vh;
+}
+
+.overlay {
+    position: absolute;
+    /* top: 10; */
+    left: 0;
+    width: 100%;
+    height: 75vh;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.7) 0%,
+            /* transparent at the top */
+            rgba(0, 0, 0, 0.5) 70%,
+            /* start getting dark */
+            rgba(0, 0, 0, 0.7) 100%
+            /* darker at the bottom */
+        );
+    z-index: 1;
+}
+
+/* Make sure your captions (text, button) are ABOVE the overlay */
+.carousel-caption {
+    position: relative;
+    z-index: 2;
+}

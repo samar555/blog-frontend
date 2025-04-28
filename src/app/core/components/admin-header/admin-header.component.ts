@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AdminHeaderComponent {
 
-  home:string="admin/dashbored";
+  home:string="admin/";
   catagories:string="admin/catagories";
   Users:string="admin/users";
   blogs:string="admin/blogs";
