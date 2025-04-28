@@ -8,13 +8,15 @@ import { AdminHeaderComponent } from "../admin-header/admin-header.component";
   styleUrl: './admin-add-catagory.component.css'
 })
 export class AdminAddCatagoryComponent {
-
+toogleAttribute:boolean=false;
  
-  toggleField(){
-   const inputElement = document.getElementById('myInput') as HTMLInputElement;
-   if(){
-    
-   }
+  toggleField(event:any){
+    console.log(event)
+    if (event.key === 'Backspace') {
+  
+  this.toogleAttribute=true;
+}
+ 
   }
 
 }

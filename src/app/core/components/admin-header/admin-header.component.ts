@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AdminHeaderComponent {
 
+  home:string="admin/dashbored";
+  catagories:string="admin/catagories";
+  Users:string="admin/users";
+  blogs:string="admin/blogs";
 }
