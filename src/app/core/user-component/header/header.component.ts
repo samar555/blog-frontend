@@ -11,4 +11,5 @@ export class HeaderComponent {
   catagories:string="admin/catagories";
   Users:string="admin/users";
   blogs:string="admin/blogs";
+  isloggedIn=false;
 }
