@@ -10,6 +10,6 @@ export class HeaderComponent {
   home:string="user/";
   catagories:string="admin/catagories";
   Users:string="admin/users";
-  blogs:string="admin/blogs";
-  isloggedIn=false;
+  blogs:string="user/blog";
+  isloggedIn=true;
 }

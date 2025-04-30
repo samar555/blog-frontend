@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './my-blogs.component.css'
 })
 export class MyBlogsComponent {
-
+addBlogUrl:string="user/addBlog"
 }

@@ -5,6 +5,10 @@ import { AdminUsersComponent } from './core/components/admin-users/admin-users.c
 import { AdminBlogsComponent } from './core/components/admin-blogs/admin-blogs.component';
 import { HeaderComponent } from './core/user-component/header/header.component';
 import { UserDashboredComponent } from './shared/user-components/user-dashbored/user-dashbored.component';
+import { MyBlogsComponent } from './core/user-component/my-blogs/my-blogs.component';
+import { AddBlogComponent } from './core/user-component/add-blog/add-blog.component';
+import { LoginComponent } from './core/auth-Components/login/login.component';
+import { SignupComponent } from './core/auth-Components/signup/signup.component';
 
 export const routes: Routes = [
   // admin routings 
@@ -51,10 +55,22 @@ export const routes: Routes = [
       path:"",
       loadComponent:()=>import("./shared/user-components/user-dashbored/user-dashbored.component").then(c=>c.UserDashboredComponent)
     },
-
-
-
+    {
+      path:"blog",
+      loadComponent:()=>import("./core/user-component/my-blogs/my-blogs.component").then(c=>c.MyBlogsComponent)
+    },{
+      path:"addBlog",
+      loadComponent:()=>import("./core/user-component/add-blog/add-blog.component").then(c=>AddBlogComponent)
+    }
     ]
-  }
+  },
 
+  {
+    path:"login",
+    loadComponent:()=>import("./core/auth-Components/login/login.component").then(c=>c.LoginComponent)
+  },
+  {
+    path:"signup",
+    loadComponent:()=>import("./core/auth-Components/signup/signup.component").then(c=>c.SignupComponent)
+  }
 ];

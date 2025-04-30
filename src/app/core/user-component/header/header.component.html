@@ -26,7 +26,7 @@
            
           
           </ul>
-          <form class="d-flex">
+          <div class="d-flex">
             <div class="btn-group">
               <img   class="btn  dropdown-toggle logo-style-right me-5" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" src="images/user.png"/>
           
@@ -35,14 +35,14 @@
                   <li><a class="dropdown-item" href="#">login</a></li>
                   <li><a class="dropdown-item" href="#">signup</a></li>
                 }@else{
-                  <li><a class="dropdown-item" href="#">My Blogs</a></li>
+                  <li><a class="dropdown-item" [href]="blogs">My Blogs</a></li>
                 }
               
               </ul>
             </div>
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success text-white" type="submit">Search</button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
