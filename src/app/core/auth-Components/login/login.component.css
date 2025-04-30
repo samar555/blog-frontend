@@ -5,5 +5,7 @@
     /* width: 100vw; */
 }
 .card-background{
-    background-color: rgb(6, 6, 53);
+    background: linear-gradient(rgb(204, 60, 161),rgb(68, 2, 60));
+    box-shadow: 2px 2px rgb(146, 152, 233);
+    width: 25vw;
 }

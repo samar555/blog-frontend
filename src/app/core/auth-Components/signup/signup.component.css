@@ -9,3 +9,7 @@
     box-shadow: 2px 2px rgb(146, 152, 233);
     
 }
+.width-change {
+    width: fit-content;
+    align-items: center;
+}
